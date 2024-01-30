@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 
@@ -8,6 +8,7 @@ import 'swiper/css'
 import 'swiper/css/navigation';
 
 import aws from '../../assets/aws.png'
+import vsc from '../../assets/visual-studio-code.png'
 
 import { IoArrowForwardOutline } from "react-icons/io5";
 
@@ -19,6 +20,7 @@ const MainPage = () => {
     form,
     handleForm
   } = MainPageJS()
+  const navigate = useNavigate()
   return (
     <div className='MainPage c flex-c'>
       <div className='header c r'>
@@ -33,11 +35,11 @@ const MainPage = () => {
             <div className='text c flex-c'>
               <h2>{info.h2}</h2>
               <p>{info.p}</p>
-              <button>See <IoArrowForwardOutline id='arrow'/></button>
+              <button onClick={() => navigate(info.link)}>See <IoArrowForwardOutline id='arrow'/></button>
             </div>
-            <div className='img c'>
+            <Link to={info.link} className='img c'>
               <img src={require(`../../assets/${info.icon}.png`)} alt="" />
-            </div>
+            </Link>
           </div>
         ))}
         <Swiper
@@ -54,7 +56,7 @@ const MainPage = () => {
                 <div className='text c flex-c'>
                   <h2>{info.h2}</h2>
                   <p>{info.p}</p>
-                  <button>See <IoArrowForwardOutline id='arrow'/></button>
+                  <button onClick={() => navigate(info.link)}>See <IoArrowForwardOutline id='arrow'/></button>
                 </div>
                 <div className='img c'>
                   <img src={require(`../../assets/${info.icon}.png`)} alt="" />
@@ -66,6 +68,12 @@ const MainPage = () => {
       </div>
       <div className='con c'>
         <div className='skills c r flex-c'>
+          <header className='c'>
+            <h2>Knowledge</h2>
+            <div className='img c'>
+              <img src={vsc} alt="" />
+            </div>
+          </header>
           {Data.skills.map((info, index) => (
             <div className='part c flex-c' key={index}>
               <div className='text c'>

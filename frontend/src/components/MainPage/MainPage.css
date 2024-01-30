@@ -4,9 +4,9 @@
 }
 .MainPage .header {
     justify-content: space-between;
-    background: var(--middle);
+    background: #0EF6CC;
     padding: 1rem .5rem;
-    color: var(--white);
+    color: #1A1C22;
 }
 .MainPage .header a {
     color: var(--white);
@@ -45,6 +45,9 @@
     padding: 1rem .5rem;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
     transition: .4s;
+}
+.MainPage .cards .card.desktop:nth-child(1) {
+    background: #F65151;
 }
 .MainPage .cards .card.mobile {
     width: 100%;
@@ -89,6 +92,9 @@
 .MainPage .cards .card.mobile .text button {
     background: orange;
 }
+.MainPage .cards .card.desktop:nth-child(1) .text button {
+    background: #2E2828;
+}
 .MainPage .cards .card .text button:hover {
     background: orange;
     box-shadow: 1px 2px 4px rgba(0,0,0,0.7);
@@ -97,7 +103,8 @@
     opacity: 0;
     transition: .4s;
 }
-.MainPage .cards .card .text button:hover #arrow {
+.MainPage .cards .card .text button:hover #arrow,
+.MainPage .cards .card.desktop:nth-child(1) .text button #arrow {
     opacity: 1;
     transform: translateX(50%);
 }
@@ -127,6 +134,19 @@
 .MainPage .con .skills:hover {
     transform: translateY(-1%);
     box-shadow: 1px 2px 4px rgba(0,0,0,0.4);
+}
+.MainPage .con .skills header {
+    justify-content: space-between;
+    padding: .5rem;
+    background: #580EF6;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.MainPage .con .skills header h2 {
+    color: var(--white);
+    font-family: var(--font4);
+}
+.MainPage .con .skills header .img {
+    max-width: 50px;
 }
 .MainPage .con .skills .part {
     margin-bottom: 1rem;
@@ -296,10 +316,6 @@
     }
 }   
 @media (max-width: 480px) {
-    .MainPage .header {
-        background: transparent;
-        padding: 0 .5rem;
-    }
     .MainPage .cards {
         padding: 4px 0;
     }
