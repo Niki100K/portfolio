@@ -1,0 +1,62 @@
+{
+  "cards": [
+    {
+      "h2": "About Me",
+      "p": "Click to discover how I can assist you and learn more about my background. Evaluate whether I align with your requirements for a Full Stack Developer.",
+      "link": "about",
+      "icon": "user-file"
+    },
+    {
+      "h2": "Education",
+      "p": "Details about my academic background, including completed degrees, certificates, and other relevant qualifications.",
+      "link": "education",
+      "icon": "medical-book"
+    },
+    {
+      "h2": "Projects",
+      "p": "Explore a selection of projects I have developed and contributed to.",
+      "link": "projects",
+      "icon": "medal"
+    }
+  ],
+  "skills": [
+    {
+      "h2": "Frontend",
+      "images": [
+        "html",
+        "css",
+        "javaScript",
+        "react"
+      ]
+    },
+    {
+      "h2": "Backend",
+      "images": [
+        "redux",
+        "php",
+        "laravel",
+        "mysql",
+        "nodejs"
+      ]
+    },
+    {
+      "h2": "Resourses",
+      "images": [
+        "aws",
+        "github-social"
+      ]
+    }
+  ],
+  "email": [
+    {
+      "h2": "Email:",
+      "img": "message",
+      "h3": "niki5kaloianov@gmail.com"
+    },
+    {
+      "h2": "Phone:",
+      "img": "telephone",
+      "h3": "+359 895 684 863"
+    }
+  ]
+}

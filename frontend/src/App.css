@@ -1,0 +1,29 @@
+/*  Center   */
+.c {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  Radius */
+.r {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+/* Sticky */
+.s {
+    position: sticky;
+    top: 0;
+}
+/*  Flex-Dirextion: Column */
+.flex-c {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.white {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    z-index: -1;
+}

@@ -1,0 +1,147 @@
+.MainPage {
+    margin-top: 10rem;
+    padding: 0 .5rem;
+}
+.MainPage .header {
+    justify-content: space-between;
+    align-items: flex-start;
+    background: var(--middle);
+    padding: 1rem .5rem;
+    color: var(--white);
+}
+.MainPage .cards {
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.MainPage .cards .mySwiper {
+    display: none;
+}
+.MainPage .cards .mySwiper .swiper-wrapper {
+    padding: .5rem 0;
+}
+.MainPage .cards .mySwiper .swiper-button-prev,
+.MainPage .cards .mySwiper .swiper-button-next {
+    background: rgba(0,0,0,0.7);
+    border-radius: .5rem;
+    width: 40px;
+    height: 40px;
+    color: orange;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 10%;
+}
+.MainPage .cards .mySwiper .swiper-button-prev::after,
+.MainPage .cards .mySwiper .swiper-button-next::after {
+    font-size: 2rem;
+}
+.MainPage .cards .card {
+    width: 33%;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #222327;
+    padding: 1rem .5rem;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: .4s;
+}
+.MainPage .cards .card.mobile {
+    width: 100%;
+}
+.MainPage .cards .card.mobile {
+    flex-direction: column-reverse;
+}
+.MainPage .cards .card.desktop:hover {
+    transform: translateY(-5%);
+}
+.MainPage .cards .card.desktop .text {
+    width: 75%;
+    align-items: flex-start;
+}
+.MainPage .cards .card.mobile .text {
+    align-items: flex-start;
+}
+.MainPage .cards .card .text h2 {
+    color: var(--white);
+    font-family: var(--font4);
+}
+.MainPage .cards .card .text p {
+    color: var(--white);
+    font-family: var(--font3);
+}
+.MainPage .cards .card.mobile .text h2 {
+    font-size: 20px;
+    color: var(--white);
+    font-family: var(--font3);
+}
+.MainPage .cards .card.mobile .text p {
+    font-size: 20px;
+    margin-top: .5rem;
+    font-family: var(--font2);
+}
+.MainPage .cards .card .text button {
+    margin: 1rem 4px;
+    font-size: 1rem;
+    background: transparent;
+    color: var(--white);
+    transition: .4s;
+}
+.MainPage .cards .card.mobile .text button {
+    background: orange;
+}
+.MainPage .cards .card .text button:hover {
+    background: orange;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.7);
+}
+.MainPage .cards .card.desktop .text button #arrow {
+    opacity: 0;
+    transition: .4s;
+}
+.MainPage .cards .card .text button:hover #arrow {
+    opacity: 1;
+    transform: translateX(50%);
+}
+.MainPage .cards .card .img {
+    width: 25%;
+}
+.MainPage .cards .card .img img {
+    filter: drop-shadow(1px 2px 4px rgba(0,0,0,0.7));
+}
+
+@media (max-width: 1200px) {
+    .MainPage .cards {
+        flex-wrap: wrap;
+    }
+    .MainPage .cards .card.desktop {
+        width: 49%;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 780px) {
+    .MainPage .cards .card.desktop {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    .MainPage .header {
+        background: transparent;
+        padding: 0 .5rem;
+    }
+    .MainPage .cards {
+        padding: 4px 0;
+    }
+    .MainPage .cards .mySwiper {
+        display: flex;
+    }
+    .MainPage .cards .card.desktop {
+        display: none;
+    }
+    .MainPage .cards .card.mobile {
+        min-height: 340px;
+        justify-content: flex-end;
+    }
+    .MainPage .cards .card.mobile .img {
+        width: 100%;
+        max-width: 120px;
+    }
+}
