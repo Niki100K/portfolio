@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 
@@ -14,6 +15,9 @@ const MainPage = () => {
     <div className='MainPage c flex-c'>
       <div className='header c r'>
         <h2>Actions</h2>
+        <Link>
+          view all
+        </Link>
       </div>
       <div className='cards c'>
         {Data.cards.map((info, index) => (

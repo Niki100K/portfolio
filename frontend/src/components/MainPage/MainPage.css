@@ -4,9 +4,11 @@
 }
 .MainPage .header {
     justify-content: space-between;
-    align-items: flex-start;
     background: var(--middle);
     padding: 1rem .5rem;
+    color: var(--white);
+}
+.MainPage .header a {
     color: var(--white);
 }
 .MainPage .cards {
@@ -24,8 +26,8 @@
 .MainPage .cards .mySwiper .swiper-button-next {
     background: rgba(0,0,0,0.7);
     border-radius: .5rem;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     color: orange;
     backdrop-filter: blur(2px);
     position: absolute;
