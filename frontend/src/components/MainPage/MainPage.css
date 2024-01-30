@@ -297,7 +297,7 @@
         display: none;
     }
     .MainPage .cards .card.mobile {
-        min-height: 340px;
+        min-height: 300px;
         justify-content: flex-end;
     }
     .MainPage .cards .card.mobile .img {
