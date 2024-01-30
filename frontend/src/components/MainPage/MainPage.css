@@ -120,9 +120,13 @@
 }
 .MainPage .con .skills {
     width: 25%;
-    background: var(--middle);
     margin-right: 1rem;
-    box-shadow: 1px 2px 4px rgba(0,0,0,0.7);
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+    transition: .4s;
+}
+.MainPage .con .skills:hover {
+    transform: translateY(-1%);
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.4);
 }
 .MainPage .con .skills .part {
     margin-bottom: 1rem;
@@ -157,7 +161,6 @@
     width: 75%;
     justify-content: space-between;
     align-items: flex-start;
-    background: var(--white);
     padding: 1rem .5rem;
 }
 .MainPage .con .about .me .img {
@@ -166,7 +169,12 @@
 .MainPage .con .about .me .info {
     max-width: 400px;
     padding: 1rem .5rem;
-    background: var(--dark);
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+    transition: .4s;
+}
+.MainPage .con .about .me .info:hover {
+    transform: translateY(-1%);
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.3);
 }
 .MainPage .con .about .me .info header {
     background: var(--middle);
@@ -215,6 +223,11 @@
 .MainPage .con .about .contact {
     width: 25%;
     height: 200px;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.3);
+    transition: .4s;
+}
+.MainPage .con .about .contact:hover {
+    transform: translateY(-2%);
     box-shadow: 2px 4px 4px rgba(0,0,0,0.7);
 }
 .MainPage .con .about .contact .earch {
