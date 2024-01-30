@@ -74,7 +74,6 @@
     font-family: var(--font3);
 }
 .MainPage .cards .card.mobile .text p {
-    font-size: 20px;
     margin-top: .5rem;
     font-family: var(--font2);
 }
